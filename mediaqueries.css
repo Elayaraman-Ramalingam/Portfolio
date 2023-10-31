@@ -1,6 +1,8 @@
 @media screen and (max-width: 1400px) {
+  section{
+        height: auto;
+  }
   #profile {
-    height: 83vh;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -34,9 +36,6 @@
   .section-container {
     height: fit-content;
   }
-  section {
-    margin: 0 5%;
-  }
   .section__pic-container {
     width: 275px;
     height: 275px;
@@ -53,7 +52,6 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
     margin-bottom: 0;
   }
   article {
@@ -99,5 +97,10 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .article-container{
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
   }
 }

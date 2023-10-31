@@ -150,7 +150,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -158,6 +157,7 @@ section {
 
 .section-container {
   display: flex;
+  justify-content: center;
 }
 
 /* PROFILE SECTION */
@@ -166,7 +166,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: auto;
 }
 
 .section__pic-container {
@@ -174,6 +174,9 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+.section__pic-container img{
+  border-radius: 5%;
 }
 
 .section__text {
@@ -263,10 +266,6 @@ section {
 
 /* ABOUT SECTION */
 
-#about {
-  position: relative;
-}
-
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -281,16 +280,26 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  justify-content: center;
 }
 
 .about-pic {
   border-radius: 2rem;
 }
-
+section{
+  text-align: center;
+      width: 70% !important;
+        margin: auto;
+}
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+#experience .about-containers{
+  display:flex ;
+      width: 100%;
 }
 
 .details-container {
@@ -301,6 +310,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  max-width: 350px;
 }
 
 .section-container {
@@ -316,9 +326,19 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
-  position: relative;
+.carousel-container {
+  width: 100%;
 }
+
+
+/* Add any other necessary styling for your articles here */
+.article-carousel .article {
+  flex: 0 0 20%; /* Adjust the width as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  /* Additional styling for your articles */
+}
+
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
@@ -326,42 +346,43 @@ section {
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
-
-.experience-details-container {
+#experience-cards{
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
+
 
 .article-container {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content:flex-start;
 }
 
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+    justify-content: center;
   gap: 0.5rem;
+  align-items: center;
 }
 
 article .icon {
   cursor: default;
+  height: 64px;
+  margin-left: 16px;
 }
 
 /* PROJECTS SECTION */
 
-#projects {
-  position: relative;
-}
-
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .project-img {
@@ -386,7 +407,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  /* height: 70vh; */
 }
 
 .contact-info-upper-container {
